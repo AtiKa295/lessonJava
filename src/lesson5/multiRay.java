@@ -1,0 +1,24 @@
+package lesson5;
+
+import java.util.Arrays;
+
+public class multiRay {
+    public static void main(String[] args) {
+        int[] group1 = {180, 178, 190};
+        int[] group2 = {165, 195, 193};
+
+        int[][] multiArray = {group1, group2};
+
+        upperFor:
+        for (int[] array : multiArray) {
+            for (int number : array) {
+                if (number == 178) {
+                    System.out.println("Nasli");
+                    break upperFor;
+                } else {
+                    System.out.println("Ne podosol po rostu");
+                }
+            }
+        }
+    }
+}
