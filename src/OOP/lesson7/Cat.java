@@ -1,9 +1,11 @@
 package OOP.lesson7;
 
+import java.util.Arrays;
+
 public class Cat {
-    String color;
+    public String color;
     double weight;
-    String ownerName;
+    private String ownerName;
 
     public Cat(String colorName, double weightCat, String owner){
         this.color = colorName;
@@ -40,6 +42,10 @@ public class Cat {
         }else {
             System.out.println("Dog");
         }
+    }
+
+    public void feed(String giver, String ... product) {
+        System.out.printf("Human %s give for cat: %s\n", giver, Arrays.toString(product));
     }
 
     @Override
