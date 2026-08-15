@@ -5,6 +5,7 @@ public class conditions {
         int x = 5;
         int y = 6;
 
+
         if (x > y) {
             System.out.println("x Больше чем y");
         } else if (x == y) {
