@@ -8,7 +8,7 @@ public class Runner2 {
         Cat cat = new Cat("grey", 10, "Egor");
         zoo Zoo = new zoo(cat, dog);
         Zoo.feed();
-
+//s
 
 
 //        System.out.println(dog);
